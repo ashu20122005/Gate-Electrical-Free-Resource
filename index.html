@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL ELECTRICAL GATE VIDEOS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #222;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            text-decoration-thickness: 5px;
+            color: blue;
+            background-color: antiquewhite;
+            margin: 0;
+            padding: 10px;
+        }
+
+        p {
+            font-family: 'Nunito Sans', sans-serif;
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .syll {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f1f1f1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        label {
+            color: red;
+            padding: 10px 0;
+            display: block;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1200px;
+        }
+
+        .left-box, .right-box {
+            flex: 1 1 100%;
+        }
+
+        .right-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 2px solid #ccc;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 10px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .left-box {
+                flex: 3;
+            }
+
+            .right-box {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ALL ELECTRICAL SYLLABUS FOR GATE AND IES</h1>
+
+    <div id="content"></div>
+
+    <script>
+        const topics = [
+            {
+                title: "NETWORK THEORY GATE EE",
+                syllabus: `Ideal voltage and current sources, dependent sources, R, L, C, M elements; Network solution methods: KCL, KVL, Node and Mesh analysis; Theorems: Thevenin, Norton, Superposition, Max Power Transfer; Transient and sinusoidal analysis; Resonance; Two port networks; Three-phase circuits; Star-delta; Complex power and power factor.`,
+                video: "https://www.youtube.com/embed/videoseries?si=7o6lCtlQp743kdVJ&amp;list=PL4zFSWGjyVv5uxvzbVLkn40vV42IQYB3y",
+                books: ["Van Valkenburg – Network Analysis", "Sudhakar & Palli – Network Analysis"]
+            },
+            {
+                title: "POWER SYSTEM GATE EE",
+                syllabus: `Power generation concepts, transmission, load dispatch, compensation, field distribution, per-unit quantities, load flow, control, protection, breakers, stability, and equal area criterion.`,
+                video: "https://www.youtube.com/embed/videoseries?si=lte96O75i4GqwCbC&amp;list=PLe8lX1SLwAPG_ssxiyipma2oHqeusP3co",
+                books: ["C.L. Wadhwa – Electrical Power Systems", "Ashfaq Hussain – Electrical Power Systems"]
+            },
+            {
+                title: "CONTROL SYSTEMS",
+                syllabus: `Modelling, feedback, block diagrams, signal flow graphs, time and frequency domain analysis, stability, compensators, controllers, state space model.`,
+                video: "https://www.youtube.com/embed/videoseries?si=TELY8ZYiNzk8eIPy&amp;list=PLs5_Rtf2P2r4r0h0VT5gn36f1_PXjok-c",
+                books: ["Nagrath & Gopal – Control Systems Engineering", "Ogata – Modern Control Engineering"]
+            },
+            {
+                title: "ELECTRICAL MACHINES",
+                syllabus: `Transformers, DC machines, induction machines, synchronous machines, motor starting, efficiency calculations.`,
+                video: "https://www.youtube.com/embed/videoseries?si=F_O06T2ZUtueLfY8&amp;list=PLs5_Rtf2P2r5YY5b23uDGrtpo42ezMmGp",
+                books: ["B.L. Theraja – Electrical Technology Vol. II", "P.S. Bimbhra – Electrical Machinery"]
+            },
+            {
+                title: "ELECTROMAGNETIC FIELDS",
+                syllabus: `Electric and magnetic fields, laws, potential, capacitance, inductance, magnetic circuits.`,
+                video: "https://www.youtube.com/embed/videoseries?si=mztJHxbpVpBEaRW9&amp;list=PLs5_Rtf2P2r5AJvc-EuBEwdur_dUVojW-",
+                books: ["Sadiku – Elements of Electromagnetics", "Hayt & Buck – Engineering Electromagnetics"]
+            },
+            {
+                title: "SIGNALS AND SYSTEMS",
+                syllabus: `Signal representation, scaling, shifting, LTI systems, Fourier and Laplace transforms, Z-transform, sampling, RMS.`,
+                video: "https://www.youtube.com/embed/videoseries?si=km8gxZ0I9rEXSq2r&amp;list=PLA9RS_96_LD5OsO45aYnTB4pWT5I5ld5u",
+                books: ["Oppenheim & Willsky – Signals and Systems", "B.P. Lathi – Principles of Signal Processing"]
+            },
+            {
+                title: "ELECTRICAL AND ELECTRONIC MEASUREMENT",
+                syllabus: `Bridges, voltmeters, ammeters, power and energy meters, oscilloscopes, measurement errors.`,
+                video: "https://www.youtube.com/embed/videoseries?si=e_1x0toat6EOahiX&amp;list=PLs5_Rtf2P2r6rQ5-DSe-MSDBlrpz8fSz_",
+                books: ["Golding & Widdis – Electrical Measurements", "A.K. Sawhney – Electrical & Electronic Measurements"]
+            },
+            {
+                title: "ANALOG ELECTRONIC",
+                syllabus: `Diode circuits, amplifiers, oscillators, filters, op-amps, timers, A/D and D/A conversion.`,
+                video: "https://www.youtube.com/embed/videoseries?si=WRpEkndX3JQKQJs5&amp;list=PLs5_Rtf2P2r674CTMNJ3odeHk9Wtb-WWl",
+                books: ["Boylestad & Nashelsky – Electronic Devices and Circuit Theory", "Sedra & Smith – Microelectronic Circuits"]
+            },
+            {
+                title: "DIGITAL ELECTRONIC",
+                syllabus: `Combinational and sequential circuits, logic gates, multiplexers, demultiplexers, A/D D/A converters.`,
+                video: "https://www.youtube.com/embed/videoseries?si=q0Ze73AxStq_ftrP&amp;list=PLR7krO3VHssS2rKksstCXwB5B13CXcQqd",
+                books: ["Morris Mano – Digital Logic and Computer Design", "R.P. Jain – Modern Digital Electronics"]
+            },
+            {
+                title: "POWER ELECTRONIC",
+                syllabus: `Thyristors, MOSFET, IGBT, rectifiers, inverters, converters, harmonics, modulation, control.`,
+                video: "https://www.youtube.com/embed/videoseries?si=eINM8eqAJ38TK86y&amp;list=PLs5_Rtf2P2r5KREX_ijxw2Sz-ISNhAgH4",
+                books: ["P.S. Bimbhra – Power Electronics", "Muhammad H. Rashid – Power Electronics"]
+            }
+        ];
+
+        const contentDiv = document.getElementById("content");
+
+        topics.forEach(({ title, syllabus, video, books }, index) => {
+            const block = document.createElement("div");
+            block.className = "container";
+            block.innerHTML = `
+                <div class="left-box">
+                    <h2>${title}</h2>
+                    <p style="color: rgb(200, 33, 200); background-color: aqua;">Syllabus of ${title}</p>
+                    <p class="syll">${syllabus}</p>
+                    <label for="progress${index}">Enter your Progress</label>
+                    <input type="range" id="progress${index}" name="progress${index}">
+                    <iframe src="${video}" allowfullscreen></iframe>
+                </div>
+                ${books ? `<div class="right-box">
+                    <h3>BOOK SOURCE:</h3>
+                    <ul>${books.map(book => `<li>${book}</li>`).join("")}</ul>
+                </div>` : ""}
+            `;
+            contentDiv.appendChild(block);
+        });
+    </script>
+</body>
+</html>
