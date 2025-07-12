@@ -16,9 +16,10 @@
             color: #222;
         }
 
-        h1, h2 {
+        h2, h3 {
+            font-family: 'Poppins', sans-serif;
             text-align: center;
-            color: blue;
+            color: lightpink;
             background-color: antiquewhite;
             margin: 0;
             padding: 10px;
@@ -40,7 +41,7 @@
         }
 
         label {
-            color: red;
+            color: black;
             padding: 10px 0;
             display: block;
             font-weight: bold;
@@ -96,7 +97,7 @@
     </style>
 </head>
 <body>
-    <h1>ALL ELECTRICAL SYLLABUS FOR GATE AND IES</h1>
+    <h2>ALL ELECTRICAL SYLLABUS FOR GATE AND IES</h2>
 
     <div id="content"></div>
 
@@ -171,8 +172,8 @@
             block.className = "container";
             block.innerHTML = `
                 <div class="left-box">
-                    <h2>${title}</h2>
-                    <p style="color: rgb(200, 33, 200); background-color: aqua;">Syllabus of ${title}</p>
+                    <h3>${title}</h3>
+                    <p style="color: rgb(200, 33, 200); background-color: antiquewhite;">Syllabus of ${title}</p>
                     <p class="syll">${syllabus}</p>
                     <label for="progress${index}">Enter your Progress</label>
                     <input type="range" id="progress${index}" name="progress${index}">
